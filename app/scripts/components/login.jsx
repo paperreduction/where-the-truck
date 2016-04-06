@@ -42,7 +42,7 @@ var LoginComponent = React.createClass({
         Parse.User
             .logIn(this.state.username, this.state.password, {
                 success: function(user) {
-                    self.app.navigate('admin/trucks/add/', {trigger: true});
+                    self.props.app.navigate('admin/trucks/add/', {trigger: true});
                 },
                 error: function(user, error) {
                     // The login failed. Check error to see why.
