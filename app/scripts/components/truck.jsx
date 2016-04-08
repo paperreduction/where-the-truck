@@ -35,7 +35,7 @@ var AddChangeTruckComponent = React.createClass({
                     menu: user.get('menuURL')
                 });
             },
-            error: function(error) {
+            error: function(truck, error) {
                 alert("Error: " + error.code + " " + error.message);
             }
         });

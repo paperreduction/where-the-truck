@@ -59,7 +59,16 @@ var LoginComponent = React.createClass({
         Parse.User
             .logIn(this.state.username, this.state.password, {
                 success: function(user) {
-                    self.props.app.navigate('admin/trucks/add/', {trigger: true});
+                    var query = new Parse.Query(Truck);
+                    query.equalTo("user", user);
+                    query.first({
+                        success: function (truck) {
+                            self.props.app.navigate('admin/trucks/' + truck.id + '/', {trigger: true});
+                        },
+                        error: function(truck, error) {
+                            alert("Error: " + error.code + " " + error.message);
+                        }
+                    });
                 },
                 error: function(user, error) {
                     // The login failed. Check error to see why.
