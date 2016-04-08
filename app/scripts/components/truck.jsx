@@ -1,87 +1,89 @@
 var React = require('react');
 var LinkedStateMixin = require('react/lib/LinkedStateMixin');
+var Parse = require('parse');
 
 var Input = require('react-bootstrap/lib/Input');
 var ButtonInput = require('react-bootstrap/lib/ButtonInput');
 
-var Truck = require('../models/truck');
+var Truck = require('../models/truck').Truck;
 
 
 var AddChangeTruckComponent = React.createClass({
     mixins: [LinkedStateMixin],
     getInitialState: function(){
-        var truck = Truck.get(this.props.truckI)
-        return {'name': '', 'description': '', 'siteURL': '', 'menuURL': ''};
+        return {'name': '', 'description': '', 'url': '', 'menu': '', 'confirm': ''};
     },
-    handleSignup: function(event){
-        event.preventDefault();
-
-        var Parse = this.props.app.Parse;
-
-        var user = new Parse.User();
-        user.set({
-            'username': this.state.usernameUp,
-            'password': this.state.passwordUp,
-            'email': this.state.email,
-            'truckName': this.state.truckName,
-            'phone': this.state.phone
-        });
-
-        user.signUp(null, {
-          'success': function(results){
-            console.log("results: ", results);
-          },
-          'error': function(user, error){
-            console.log(user, error);
-          }
-        });
-    },
-    handleSignIn: function(event){
-        event.preventDefault();
-
+    componentDidMount: function() {
         var self = this;
-        var Parse = this.props.app.Parse;
 
-        Parse.User
-            .logIn(this.state.username, this.state.password, {
-                success: function(user) {
-                    self.app.navigate('admin/trucks/add/', {trigger: true});
-                },
-                error: function(user, error) {
-                    // The login failed. Check error to see why.
-                    alert('There seems to be a problem:' + error);
-                }
-            });
+        // Bail if no truck id passed in
+        if(!this.props.truckId){
+            return;
+        }
+
+        // Get the truck
+        var query = new Parse.Query(Truck);
+        query.get(this.props.truckId, {
+            success: function(truck) {
+                self.truck = truck;
+                var user = Parse.User.current();
+
+                self.setState({
+                    name: truck.get('name'),
+                    description: truck.get('description'),
+                    url: user.get('siteURL'),
+                    menu: user.get('menuURL')
+                });
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    },
+    handleSubmit: function(event){
+        event.preventDefault();
+        var self = this;
+
+        this.truck.set({
+            name: self.state.name,
+            description: self.state.description
+        });
+        this.truck.save().then(function(){
+           self.setState({'confirm': 'Truck Updated!'});
+        });
+
+        var user = Parse.User.current();
+        user.set({
+            siteURL: self.state.url,
+            menuURL: self.state.menu
+        });
+        user.save();
     },
     render: function(){
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <h1>Start Your Engine!</h1>
+                        <h1>Your Truck</h1>
+                        <h3>{this.state.confirm}</h3>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-sm-12">
-                        <form id="login" onSubmit={this.handleSignIn}>
-                            <Input name="username" type="text" placeholder="username" valueLink={this.linkState('username')}/>
-                            <Input name="password" type="password" placeholder="Password Please" valueLink={this.linkState('password')}/>
-
-                            <ButtonInput className="btn btn-primary" type="submit" value="Login" />
-                        </form>
-                    </div>
 
                     <div className="col-sm-12">
-                        <form id="signup" onSubmit={this.handleSignup}>
-                            <Input name="username" type="text" placeholder="username" valueLink={this.linkState('usernameUp')}/>
-                            <Input name="password" type="password" placeholder="password" valueLink={this.linkState('passwordUp')}/>
-                            <Input name="password2" type="password" placeholder="reenter password" valueLink={this.linkState('password2Up')}/>
-                            <Input name="truck" type="text" placeholder="food truck name" valueLink={this.linkState('truckName')}/>
-                            <Input name="phone" type="text" placeholder="phone number" valueLink={this.linkState('phone')}/>
-                            <Input name="email" type="email" placeholder="email" valueLink={this.linkState('email')}/>
+                        <form onSubmit={this.handleSubmit}>
+                            <Input name="truck" type="text" label="Click To Edit Foodtruck Name" placeholder="food truck name" valueLink={this.linkState('name')}/>
+                            <Input name="description" type="text" label="Click To Edit Foodtruck Description" placeholder="food truck description" valueLink={this.linkState('description')}/>
 
-                            <ButtonInput className="btn btn-info" type="submit" value="Register" />
+                            <hr/>
+
+                            <Input name="url" type="text" label="Click To Edit Website Link" placeholder="www.example.com" valueLink={this.linkState('url')}/>
+                            <Input name="menu" type="text" label="Click To Edit Menu Link" placeholder="www.example.com/menu" valueLink={this.linkState('menu')}/>
+
+                            <hr/>
+
+                            <ButtonInput className="btn btn-info" type="submit" value="Save" />
                         </form>
                     </div>
                 </div>

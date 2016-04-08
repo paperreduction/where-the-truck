@@ -4,6 +4,8 @@ var LinkedStateMixin = require('react/lib/LinkedStateMixin');
 var Input = require('react-bootstrap/lib/Input');
 var ButtonInput = require('react-bootstrap/lib/ButtonInput');
 
+var Truck = require('../models/truck').Truck;
+
 
 var LoginComponent = React.createClass({
     mixins: [LinkedStateMixin],
@@ -12,25 +14,40 @@ var LoginComponent = React.createClass({
     },
     handleSignup: function(event){
         event.preventDefault();
-
+        var self = this;
         var Parse = this.props.app.Parse;
 
+        // Setup new user and sign up
         var user = new Parse.User();
         user.set({
             'username': this.state.usernameUp,
             'password': this.state.passwordUp,
             'email': this.state.email,
-            'truckName': this.state.truckName,
             'phone': this.state.phone
         });
 
         user.signUp(null, {
-          'success': function(results){
-            console.log("results: ", results);
-          },
-          'error': function(user, error){
-            console.log(user, error);
-          }
+            'success': function(user){
+                // Save truck
+                var truck = new Truck();
+                var truckACL = new Parse.ACL(Parse.User.current());
+                truckACL.setPublicReadAccess(true);
+                truck.setACL(truckACL);
+                truck.set("name", self.state.truckName);
+                truck.set("user", user);
+
+                truck.save(null, {
+                    success: function(truck) {
+                        self.props.app.navigate('admin/trucks/' + truck.id + '/', {trigger: true});
+                    },
+                    error: function(error) {
+                        alert("Error: " + error.code + " " + error.message);
+                    }
+                });
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
         });
     },
     handleSignIn: function(event){

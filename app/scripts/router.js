@@ -12,8 +12,10 @@ var Router = Backbone.Router.extend({
         '': 'index',
         'dashboard/': 'index',
         'login/': 'login',
-        'admin/trucks/add/': 'adminTrucksAdd',
-        'admin/trucks/': 'adminTrucks'
+        'logout/': 'logout',
+        'admin/trucks/add/': 'adminTruckForm',
+        'admin/trucks/:id/': 'adminTruckForm',
+        'admin/trucks/': 'adminTruckList'
     },
     initialize: function(){
         // Configure the node mount point
@@ -30,6 +32,8 @@ var Router = Backbone.Router.extend({
     checkUser: function(){
         if(Parse.User.current()){
             this.navigate('admin/trucks/add/', {trigger: true});
+        }else{
+            this.navigate('login/', {trigger: true});
         }
     },
     requireLogin: function(){
@@ -48,12 +52,16 @@ var Router = Backbone.Router.extend({
         ReactDOM.unmountComponentAtNode(this.appContainer);
         ReactDOM.render(React.createElement(LoginComponent, {app: self}), this.appContainer);
     },
+    logout: function(){
+        Parse.User.logOut();
+        this.checkUser();
+    },
 
     // Admin Views
-    adminTrucksAdd: function(){
+    adminTruckForm: function(id){
         var self = this;
         ReactDOM.unmountComponentAtNode(this.appContainer);
-        ReactDOM.render(React.createElement(AddChangeTruckComponent, {app: self}), this.appContainer);
+        ReactDOM.render(React.createElement(AddChangeTruckComponent, {app: self, truckId: id}), this.appContainer);
     }
 });
 
