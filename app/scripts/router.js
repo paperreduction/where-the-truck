@@ -3,6 +3,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Parse = require('parse');
 
+var IndexComponent = require('./components/index.jsx').IndexComponent;
 var LoginComponent = require('./components/login.jsx').LoginComponent;
 var AddChangeTruckComponent = require('./components/truck.jsx').AddChangeTruckComponent;
 
@@ -42,8 +43,10 @@ var Router = Backbone.Router.extend({
         }
     },
     index: function(){
+        var self = this;
         ReactDOM.unmountComponentAtNode(this.appContainer);
-        this.appContainer.innerHTML = "<div class='well'>Intentionally Left Blank</div>";
+        ReactDOM.render(React.createElement(IndexComponent, {app: self}), this.appContainer);
+        //this.appContainer.innerHTML = "<div class='well'>Intentionally Left Blank</div>";
     },
     login: function(){
         this.checkUser();

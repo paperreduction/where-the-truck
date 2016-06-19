@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+/* Nav Buttons */
+
+body {
+    display: none;
+}
+
+.nav-WittySayingContainer, .number-TrucksListedContainer {
+    width: 100%;
+    height: auto;
+    padding: 32px 0 32px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /* background-color: #008DAE; */
+    /* box-shadow: 0px 3px 4px #101216; */
+    max-width: 600px;
+    margin: 0 auto 8px auto;
+    min-width: 320px;
+    text-align: center;
+}
+
+.nav-WittySayingContainer {
+    padding: 64px 0 16px 0;
+}
+
+.truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-family: 'Lobster', italic;
+    font-size: 3rem;
+    color: #B6D3D8;
+    line-height: 100%;
+    letter-spacing: 1px;
+}
+
+.button-NavContainerOuter, .button-WhatsComingUpOuter, .truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter, .truck-ListOpen-FooterFilterPopUp-FilterContainerOuter {
+	width: 75%;
+	max-width: 325px;
+	min-width: 200px;
+	height: auto;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+    margin: 8px auto;
+    position: relative;
+    z-index: 50;
+
+    -webkit-box-flex-direction: column;
+    -moz-box-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    border: 2px solid #D15127;
+    padding: 4px;
+
+    -webkit-box-align-items: center;
+    -moz-box-align-items: center;
+    -ms-flex-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-align-self: center;
+    -moz-box-align-self: center;
+    -ms-flex-align-self: center;
+    -webkit-align-self: center;
+    align-self: center;
+
+    /*box-shadow: 0px 3px 4px #101216;*/
+
+}
+
+.truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter {
+    -webkit-animation-name: fadeInUpBig;
+    -moz-animation-name: fadeInUpBig;
+    -ms-animation-name: fadeInUpBig;
+    -o-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -ms-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+/*.button-NavContainerOuter {
+	width: 95%;
+	margin: 16px auto 8px;
+}*/
+
+.button-WhatsComingUpOuter-standalone {
+	margin: 8px auto 150px auto;
+}
+
+.button-NavContainerInner, a.button-WhatsComingUpInner, .button-WhatsComingUpInner, a.truck-ListOpen-FooterNavMenuPopUp-NavContainerInner, .truck-ListOpen-FooterNavMenuPopUp-NavContainerInner, a.truck-ListOpen-FooterFilterPopUp-FilterContainerInner, .truck-ListOpen-FooterFilterPopUp-FilterContainerInner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: auto;
+	background-color: #33393e;
+	/* min-height: 100%; */
+	border: 3px solid #008DAE;
+	/* overflow: hidden; */
+	/* padding: 2px; */
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-decoration: none;
+	box-shadow: 0px 3px 4px #101216;
+	text-align: center;
+
+/*    -ms-transition-duration: .75s;
+    -o-transition-duration: .75s;
+    -moz-transition-duration: .75s;
+    -webkit-transition-duration: .75s;
+    transition-duration: .75s;*/
+}
+
+
+.button-NavContainerInner:active, a.truck-ListOpen-FooterFilterPopUp-FilterContainerInner:active, a.truck-ListOpen-FooterNavMenuPopUp-NavContainerInner:active, a.button-WhatsComingUpInner:active {
+
+    border: 3px solid #008DAE;
+    background-color:  #008DAE;
+    box-shadow: 0px 8px 8px #101216;
+
+/*    -ms-transition-duration: .1s;
+    -o-transition-duration: .1s;
+    -moz-transition-duration: .1s;
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s;*/
+
+    /*transition-timing-function: cubic-bezier(0.42, 0.26, 0, 1.33);*/
+
+}
+
+/*.truck-ListOpen-FooterFilterPopUp-FilterContainer:after {
+	border: 2px solid red;
+}*/
+
+.button-NavText, .button-WhatsComingUpText, .truck-ListOpen-FooterNavMenuPopUp-NavText, .truck-ListOpen-FooterFilterPopUp-FilterText {
+	font-family: 'Oswald', sans-serif;
+	font-style: normal;
+	font-size: 1rem;
+	color: #B6D3D8;
+	/*line-height: 100%;*/
+	letter-spacing: 1px;
+
+	-webkit-transform: scale(1,1.25);
+	-moz-transform: scale(1,1.25);
+	-ms-transform: scale(1,1.25);
+	-o-transform: scale(1,1.25);
+	transform: scale(1,1.25);
+
+	margin: 8px;
+
+	/*height: auto;*/
+}
+
+
+/*////////////////// MEDIA QUERY ////////////////////////*/
+
+@media (max-width: 550px) {
+.number-TrucksListedText {
+    font-size: 2.5rem;
+}
+.truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 3rem;
+    color: #B6D3D8;
+}
+}
+
+@media (max-width: 400px) {
+.truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 350px) {
+/*.truck-ListOpen-FooterFilterPopUp-FilterText {
+	font-size: .85rem;
+}*/
+.truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 1.75rem;
+}
+}
+
+body {
+    display: block;
+}

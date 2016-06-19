@@ -11,7 +11,7 @@ var Truck = require('../models/truck').Truck;
 var AddChangeTruckComponent = React.createClass({
     mixins: [LinkedStateMixin],
     getInitialState: function(){
-        return {'name': '', 'description': '', 'url': '', 'menu': '', 'confirm': ''};
+        return {'name': '', 'description': '', 'url': '', 'menu': '', 'lat': 0, 'lng': 0, 'confirm': ''};
     },
     componentDidMount: function() {
         var self = this;
@@ -82,6 +82,12 @@ var AddChangeTruckComponent = React.createClass({
                             <Input name="menu" type="text" label="Click To Edit Menu Link" placeholder="www.example.com/menu" valueLink={this.linkState('menu')}/>
 
                             <hr/>
+
+                            <Input name="lat" type="text" label="Test Lat" placeholder="34.8526126" valueLink={this.linkState('lat')}/>
+                            <Input name="lng" type="text" label="Test Lng" placeholder="-82.4291157" valueLink={this.linkState('lng')}/>
+
+                            34.8526126, -82.4291157
+
 
                             <ButtonInput className="btn btn-info" type="submit" value="Save" />
                         </form>

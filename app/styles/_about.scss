@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+/* Customer Facing Truck Profile */
+
+body {
+	display: none;
+}
+
+.logo_WTT {
+	height: 150px;
+	width: 95%;
+	background-image: url("../img/WTT-Logo-dusk.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	margin: 0 auto 16px;
+	-webkit-filter: drop-shadow(0px 3px 4px #101216);
+	-moz-filter: drop-shadow(0px 3px 4px #101216);
+	-o-filter: drop-shadow(0px 3px 4px #101216);
+	-ms-filter: drop-shadow(0px 3px 4px #101216);
+	filter: drop-shadow(0px 3px 4px #101216);
+}
+
+.about-FadeInUpSmall {
+	-webkit-animation-name: fadeInUpSmall;
+	-moz-animation-name: fadeInUpSmall;
+	-ms-animation-name: fadeInUpSmall;
+	-o-animation-name: fadeInUpSmall;
+	animation-name: fadeInUpSmall;
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-ms-animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-duration: .5s;
+
+}
+
+.image-TruckPhotoContainerTint {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,141,174, 0.7);
+	z-index: 60;
+}
+
+.image-TruckPhotoTextContainer {
+	width: 60%;
+    min-width: 175px;
+    max-width: 300px;
+    height: auto;
+    background-color: #D15127;
+    text-align: center;
+    z-index: 70;
+}
+
+.image-TruckPhotoText {
+	font-family: 'Playfair Display', sans-serif;
+	font-style: italic;
+	font-size: 1.5rem;
+	color: #B6D3D8;
+	line-height: 60%;
+	letter-spacing: 1px;
+	-webkit-box-align-items: center;
+	-moz-box-align-items: center;
+	-ms-flex-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	vertical-align: middle;
+	height: auto;
+	padding: 8px 0 8px 0;
+}
+
+.profile-NameContainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+    height: auto;
+    margin: 0 auto 8px;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.profile-SocialContainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: 8px auto 32px;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+}
+
+a.buttonprofile-SocialLink {
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 3px solid #008DAE;
+	float: left;
+	-moz-box-shadow: 0px 3px 4px #101216;
+	-o-box-shadow: 0px 3px 4px #101216;
+	-ms-box-shadow: 0px 3px 4px #101216;
+	-webkit-box-shadow: 0px 3px 4px #101216;
+	box-shadow: 0px 3px 4px #101216;
+	margin: 0 8px 0 8px;
+	background-color: #333131;
+	position: relative;
+}
+
+a.buttonprofile-SocialLink:active {
+	border: 3px solid #008DAE;
+	background-color:  #008DAE;
+	box-shadow: 0px 8px 8px #101216;
+}
+
+.twitter-logo {
+	background-image: url("../img/twitter.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 65% 65%;
+}
+
+.facebook-logo {
+	background-image: url("../img/facebook.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 65% 65%;
+}
+
+.instagram-logo {
+	background-image: url("../img/instagram.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 65% 65%;
+}
+
+.about-ContainerOuter {
+	width: 100%;
+    height: auto;
+    margin: 16px auto 0px auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -ms-flex-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex-wrap: wrap;
+    -moz-box-flex-wrap: wrap;
+    -ms-flex-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.about-ContainerInner {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px 8px;
+}
+
+.about-ContainerInner {
+	width: 100%;
+	padding: 0px 16px 16px 16px;
+	border: 0px;
+}
+
+.about-ContainerOuter:last-of-type {
+	margin-bottom: 64px;
+}
+
+.about-TextTitle {
+	font-style: italic;
+	font-size: 1.5rem;
+	line-height: 100%;
+	height: auto;
+	color: #B6D3D8;
+	font-family: 'Playfair Display', sans-serif;
+	display: block;
+	letter-spacing: 1px;
+	margin: 0 auto 16px auto;
+	padding: 8px 0 8px 0;
+	width: 90%;
+	border-bottom: 4px solid #D15127;
+}
+
+.profile-AnouncementTextHeader, .profile-ScheduleTextHeader, .profile-ScheduleTextDate {
+	font-style: italic;
+    font-size: 1.25rem;
+    height: auto;
+    color: #B6D3D8;
+    font-family: 'Playfair Display', sans-serif;
+    display: block;
+    margin: 16px 0 8px 0;
+    /*letter-spacing: 3px;*/
+    padding: 8px;
+    background-color: #333131;
+}
+
+.about-TextDescription {
+	font-style: italic;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+    min-width: 105px;
+    color: #B6D3D8;
+    font-family: 'Playfair Display', sans-serif;
+    display: block;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.profile-ScheduleTextTime{
+	margin: 0 auto 16px;;
+}
+
+.about-TextDescription {
+	text-align: left;
+	padding-left: 8px;
+	line-height: 200%;
+	font-size: 1rem;
+}
+
+.profile-AnouncementTextHeader {
+	line-height: 100%;
+	letter-spacing: 1px;
+	font-size: 1.25rem;
+	padding: 12px;
+	margin: 8px 0;
+}
+
+.profile-ScheduleTextPlace:after {
+	clear: all;
+}
+
+.word-spacing {
+	word-spacing: 30px;
+	margin-left: 30px;
+}
+
+/*////////////////// TWEAKS ////////////////////////*/
+
+.truck-ListEntry-NameText {
+    font-size: 2rem;
+    /* width: 100%; */
+    -webkit-align-self: flex-start;
+    -moz-align-self: flex-start;
+    -ms-align-self: flex-start;
+    -o-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.profile-NameContainer {
+    width: 80%;
+    height: auto;
+    /*padding: 0 0 0 16px;*/
+    margin: 32px auto 16px;
+    max-width: 400px;
+}
+
+/* FOOTER HACKS */
+.truck-ListOpen-FooterSearchContainer {
+	background-color: #2C2E35;
+}
+
+button.truck-ListOpen-FooterFilterContainer {
+	background-color: #2C2E35;
+	box-shadow: 0px 0px 0px #101216;
+}
+
+.truck-ListOpen-FooterSearchContainer input{
+	height: 100%;
+	background-color: #2C2E35;
+	border-right: 0px solid transparent;
+}
+
+.truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter {
+-webkit-animation-name: fadeInUp;
+-moz-animation-name: fadeInUp;
+-ms-animation-name: fadeInUp;
+-o-animation-name: fadeInUp;
+animation-name: fadeInUp;
+
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+
+/*////// MEDIA QUERY ///////*/
+
+@media (max-width: 450px) {
+	.profile-NameContainer {
+	    width: 90%;
+	}
+}
+
+@media (max-width: 370px) {
+.truck-ListEntry-NameText {
+    font-size: 1.75rem; */
+    /* letter-spacing: 0px; */
+    /* line-height: 130%; */
+}
+}
+
+@media (max-width: 340px) {
+.truck-ListEntry-NameText {
+    font-size: 1.75rem;
+    letter-spacing: 0px;
+    line-height: 130%;
+}
+}
+
+body {
+	display: block;
+}

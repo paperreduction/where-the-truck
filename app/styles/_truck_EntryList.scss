@@ -1,0 +1,570 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CORE SETTINGS */
+
+.html {
+}
+
+body {
+	display: none;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}    	
+
+* {
+  	box-sizing: border-box; 
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+   color: #adadad;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #adadad;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #adadad;  
+}
+
+:-ms-input-placeholder {  
+   color: #adadad;  
+}
+
+
+
+/*/////////////////////////////////////////////////////*/
+/* FONTS-WORDING */
+
+.truck-ListEntry-NameText, .truck-ListEntry-ButtonDirectionsText, .truck-ListEntry-ButtonProfileText, .truck-ListEntry-ButtonsMenuText {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	color: #B6D3D8;
+	line-height: 100%;
+	letter-spacing: 1px;
+	-webkit-transform: scale(1,1.25);
+	-moz-transform: scale(1,1.25);
+	-ms-transform: scale(1,1.25);
+	-o-transform: scale(1,1.25);
+	transform: scale(1,1.25);
+}
+
+.truck-ListEntry-NameText {
+	font-size: 2rem;
+	width: 100%;
+	-webkit-align-self: flex-start;
+	-moz-align-self: flex-start;
+	-ms-align-self: flex-start;
+	-o-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.truck-ListEntryOpen-NotFoundText {
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+
+.truck-ListEntry-ButtonDirectionsText {
+	font-size: 1.25rem;
+}
+
+.truck-ListEntry-DescriptionText, .truck-ListEntry-InfoTimeAMPMText, .truck-ListEntry-InfoTimeTilText, .truck-ListEntry-InfoTimeText, .truck-ListEntry-InfoMilesUnitText, .truck-ListEntry-InfoMilesDistanceText {
+	font-family: 'Playfair Display', sans-serif;
+	font-style: italic;
+	font-size: 2rem;
+	color: #adadad;
+	line-height: 60%;
+	letter-spacing: 1px;
+	-webkit-box-align-items: center;
+	-moz-box-align-items: center;
+	-ms-flex-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.truck-ListEntry-DescriptionText {
+	font-style: italic;
+	font-size: 1rem;
+	line-height: 175%;
+	width: 100%;
+	color: #B6D3D8;
+	-webkit-align-self: flex-start;
+	-moz-align-self: flex-start;
+	-ms-align-self: flex-start;
+	-o-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.truck-ListEntry-InfoMilesUnitText {
+	font-size: .85rem;
+	margin-left: 3px;
+}
+
+.truck-ListEntry-InfoTimeText {
+	line-height: 40%;
+}
+
+.truck-ListEntry-InfoTimeTilText {
+	font-size: .85rem;
+    margin-right: 2px;
+}
+
+.truck-ListEntry-InfoTimeAMPMText {
+	font-size: .65rem;
+	margin-left: 1px;
+}
+
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CONTAINERS */
+
+.truck-ListEntryUpcoming, .truck-ListEntry {
+ 	width: 100%;
+ 	height: 200px;
+	border: 8px solid #D15127;
+	background-color: transparent;
+  	margin-bottom: 8px;
+  	-webkit-animation-name: fadeInUp;
+  	-moz-animation-name: fadeInUp;
+  	-ms-animation-name: fadeInUp;
+  	-o-animation-name: fadeInUp;
+  	animation-name: fadeInUp;
+  	-webkit-animation-duration: .5s;
+  	-moz-animation-duration: .5s;
+  	-ms-animation-duration: .5s;
+  	-o-animation-duration: .5s;
+  	animation-duration: .5s;
+  	box-shadow: 0px 3px 4px #101216;
+}
+
+.truck-ListEntryUpcoming {
+	border: 8px solid #596069;
+}
+
+.truck-ListEntry:after {
+	clear: both;
+}
+
+.truck-ListEntryUpcoming-UpperHalf, .truck-ListEntry-UpperHalf {
+	height: 50%;
+	width: 100%;
+	-webkit-box-align-self: flex-start;
+	-moz-box-align-self: flex-start;
+	-ms-flex-align-self: flex-start;
+	-webkit-align-self: flex-start;
+	align-self: flex-start;
+	border-bottom: 4px solid #D15127;
+	padding: 7px;
+}
+
+.truck-ListEntryUpcoming-UpperHalf {
+	border-bottom: 4px solid #596069;
+}
+
+.truck-ListEntry-LowerHalf {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.truck-ListEntry-ButtonsContainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	width: 58%;
+	float: left;
+	padding: 7px;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-flex-wrap: wrap;
+	-moz-box-flex-wrap: wrap;
+	-ms-flex-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.truck-ListEntryUpcoming-InfoContainer, .truck-ListEntry-InfoContainer {
+	height: 100%;
+	width: 42%;
+	float: right;
+	border-left: 4px solid #D15127;
+	padding: 7px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.truck-ListEntryUpcoming-InfoContainer {
+	border-left: 4px solid #596069;
+}
+
+.truck-ListEntryUpcoming-InfoMilesContainer, .truck-ListEntry-InfoMilesContainer {
+	height: 49%;
+	width: 100%;
+	float: left;
+	border: 2px solid #D15127;
+	margin: 0 6px 7px 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.truck-ListEntryUpcoming-InfoMilesContainer {
+	border: 2px solid #596069;
+}
+
+.truck-ListEntryUpcoming-InfoTimeContainer, .truck-ListEntry-InfoTimeContainer {
+	height: 49%;
+	width: 100%;
+	float: right;
+	border: 2px solid #D15127;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align-self: center;
+	-moz-box-align-self: center;
+	-ms-flex-align-self: center;
+	-webkit-align-self: center;
+	align-self: center;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding-bottom: 11px;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+}
+
+.truck-ListEntryUpcoming-InfoTimeContainer {
+	border: 2px solid #596069;
+}
+
+.truck-ListEntryOpen-NotFoundContainer {
+	width: 100%;
+    height: auto;
+    padding: 0 4vw;
+    margin: 32px 0 16px 0;
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -ms-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -ms-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: column;
+    -moz-box-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 0px #101216;
+}
+
+.truck-ListEntryUpcoming:last-of-type {
+	margin-bottom: 120px;
+}
+
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CLICKABLES AND STATES */
+
+a.truck-ListEntry-NameContainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #008DAE;
+	overflow: hidden;
+	padding: 7px 0 0 7px;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-decoration: none;
+	-ms-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+	box-shadow: 0px 3px 4px #101216;
+}
+
+a.truck-ListEntry-NameContainer:active {
+	border: 3px solid #008DAE;
+	background-color:  #008DAE;
+	box-shadow: 0px 8px 8px #101216;
+}
+
+a.truck-ListEntry-ButtonsProfileContainer, a.truck-ListEntry-ButtonsMenuContainer {
+	height: 45%;
+	width: 49%;
+	float: left;
+	margin: 0 6px 0 0;
+	border: 3px solid #008DAE;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align-self: center;
+	-moz-box-align-self: center;
+	-ms-flex-align-self: center;
+	-webkit-align-self: center;
+	align-self: center;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0px 3px 4px #101216;
+}
+
+a.truck-ListEntry-ButtonsMenuContainer:active {
+	border: 3px solid #008DAE;
+	background-color:  #008DAE;
+	box-shadow: 0px 8px 8px #101216;
+}
+
+a.truck-ListEntry-ButtonsProfileContainer {
+	float: right;
+	border: 3px solid #008DAE;
+	margin: 0px;
+}
+
+a.truck-ListEntry-ButtonsProfileContainer:active {
+	border: 3px solid #008DAE;
+	background-color:  #008DAE;
+	box-shadow: 0px 8px 8px #101216;
+}
+
+.truck-ListEntry-ButtonsProfile:after{
+	clear: both;
+}
+
+a.truck-ListEntry-ButtonsDirectionsContainer {
+	height: 48%;
+	width: 100%;
+	border: 3px solid #008DAE;
+	float: left;
+	margin: 7px 0 0 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0px 3px 4px #101216;
+}
+
+a.truck-ListEntry-ButtonsDirectionsContainer:active {
+	border: 3px solid #008DAE;
+	background-color:  #008DAE;
+	box-shadow: 0px 8px 8px #101216;
+}
+
+button.truck-ListOpen-FooterNavMenuContainer, button.truck-ListOpen-FooterFilterContainer {
+    width: 25%;
+    min-width: 58px;
+    float: left;
+    z-index: 102;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: column;
+    -moz-box-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 95%;
+    background-color: #008DAE;
+    padding: 4px;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align-items: center;
+    -moz-box-align-items: center;
+    -ms-flex-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 6px 0 0;
+    box-shadow: 0px 3px 4px #101216;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+}
+
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES TWEAKS */
+
+@media (max-width: 550px) {
+	a.truck-ListEntry-ButtonsMenuContainer  {
+		width: 48%;
+	}
+
+	a.truck-ListEntry-ButtonsProfileContainer {
+		width: 49%;
+	}
+
+	a.truck-ListEntry-ButtonsDirectionsContainer {
+		width: 99%;
+	}
+
+	.truck-ListEntry-InfoMilesDistanceText{
+		letter-spacing: 0px;
+		font-size: 1.75rem;
+		line-height: 70%;
+	}
+
+	.truck-ListEntry-InfoTimeText {
+		letter-spacing: 0px;
+	}
+
+	.truck-ListEntryOpen-NotFoundText {
+	    font-size: 2.5rem;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.truck-ListEntry-NameText {
+		font-size: 1.5rem;
+	    letter-spacing: 0px;
+	    line-height: 130%;
+	}
+
+	a.truck-ListEntry-NameContainer {
+		padding-bottom: 4px;
+	}
+
+
+	.truck-ListEntry-DescriptionText {
+		font-size: .85rem;
+		margin: -3px 0 0 0;
+	}
+
+	.truck-ListEntry-InfoMilesDistanceText {
+		font-size: 1.75rem;
+		line-height: 70%;
+		letter-spacing: 1px;
+	}
+
+	.truck-ListEntryOpen-NotFoundText {
+	    font-size: 2rem;
+	}
+
+
+}
+
+@media (max-width: 375px) {
+	a.truck-ListEntry-ButtonsMenuContainer  {
+		width: 48%;
+	}
+
+	a.truck-ListEntry-ButtonsProfileContainer {
+		width: 48%;
+	}
+}
+
+@media (max-width: 350px) {
+	.truck-ListEntryOpen-NotFoundText {
+	    font-size: 1.75rem;
+	}
+}
+
+body {
+	display: block;
+}

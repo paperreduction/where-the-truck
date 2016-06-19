@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+/* FOOTER FOR OPEN TRUCK LIST */
+
+/*html {
+	height: 100%;
+}*/
+
+body {
+	height: 100vh;
+	display: none;
+}
+
+q, 
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.container-LandingPageBody {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    min-width: 320px;
+    height: auto;
+    min-height: 98vh;
+    padding: 64px 0 100px 0;
+    margin: 0 auto;
+}
+
+.logo_WTT {
+	height: 200px;
+	width: 100%;
+	background-image: url("../img/WTT-Logo-dusk.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	margin: 0 auto 16px;
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-ms-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-filter: drop-shadow(0px 3px 4px #101216);
+	-moz-filter: drop-shadow(0px 3px 4px #101216);
+	-o-filter: drop-shadow(0px 3px 4px #101216);
+	-ms-filter: drop-shadow(0px 3px 4px #101216);
+	filter: drop-shadow(0px 3px 4px #101216);
+}
+
+.field-Text {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-ms-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+#mc_embed_signup {
+	width:100%; 
+	clear:left; 
+	text-align: center; 
+}
+
+.image-TruckPhotoText {
+	width:100%; 
+	clear:left; 
+	font: 3rem 'Lobster',Arial,sans-serif; 
+	text-align: center; 
+	color: #B6D3D8;
+	margin: 64px auto 16px auto;
+}
+
+form {
+	width: 100%; 
+	margin: 10px auto;
+}
+
+input, select, textarea{
+    color: #B6D3D8;
+}
+
+textarea:focus, input:focus {
+    color: #B6D3D8;
+}
+
+input[type=email] {    
+	width: 80%;
+    margin: 16px auto 0;
+    background: transparent;
+    border: 2px solid #008DAE;
+    padding: 8px;
+    background-color: #333131;
+    font: 1rem 'Oswald','Brush Script MT',cursive;
+    box-shadow: 0px 0px 0px transparent;
+    letter-spacing: 1px;
+}
+
+input[type=submit] {    
+	width: 100%;
+	background: transparent;
+	border: 2px solid #008DAE;
+	background-color: #333131;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 4px;
+	-webkit-box-flex-direction: column;
+	-moz-box-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	box-shadow: 0px 3px 4px #101216;
+	align-items: center;
+	font-family: 'Oswald',sans-serif;
+	color: #B6D3D8;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+input[type=submit]:active {
+    border: 2px solid #008DAE;
+    background-color:  #008DAE;
+    box-shadow: 0px 8px 8px #101216;
+}
+		
+button {
+	width: 40%; 
+	margin: 10px auto;
+}
+
+.description-Container {
+	width: 80%;
+	margin: 32px auto 64px auto;
+	height: auto;
+}
+
+.description-ContainerText {
+	font-family: 'Playfair Display', sans-serif;
+	font-style: normal;
+	font-size: 1rem;
+	color: #B6D3D8;
+	letter-spacing: 1px;
+	line-height: 200%;
+	padding-left: 8px;
+}
+
+a.description-ContainerText {
+	font-family: 'Playfair Display', sans-serif;
+	font-style: normal;
+	font-size: 1rem;
+	color: #B6D3D8;
+	letter-spacing: .5px;
+	line-height: 200%;
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #008DAE;
+	padding-left: 0px;
+}
+
+.description-ContainerTextEmphasis {
+	font-family: 'Lobster', sans-serif;
+	font-style: normal;
+	font-size: 2rem;
+	color: #B6D3D8;
+	letter-spacing: 1px;
+	line-height: 125%;
+	padding-left: 0px;
+}
+
+/* ///// TWEAKS ///// */
+.button-NavContainerOuter {
+    margin: 32px auto 8px;
+}
+
+@media (max-width: 455px) {
+	#mc_embed_signup {
+		font-size: 2rem;
+	}
+	.image-TruckPhotoText {
+		font-size: 2rem;
+	}
+	.description-ContainerTextEmphasis {
+		font-size: 1.5rem;
+	}
+
+	.container-LandingPageBody {
+	    padding: 0px 0 100px 0;
+	}
+}
+
+@media (max-width: 350px) {
+	.description-ContainerTextEmphasis {
+		font-size: 1.25rem;
+	}
+}
+
+body {
+	display: block;
+}
