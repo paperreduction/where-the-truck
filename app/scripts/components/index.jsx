@@ -38,14 +38,14 @@ var NavPopUpComponent = React.createClass({
                 </div>
             </div>
             <div className="truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter">
-                <a href="list_TruckOpen.html" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
+                <a href="#trucks/open/" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
                     <div className="truck-ListOpen-FooterNavMenuPopUp-NavText">
                         What&#8217;s Nearby
                     </div>
                 </a>
             </div>
             <div className="truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter">
-                <a href="list_TruckUpcoming.html" className="truck-ListOpen-FooterNavMenuPopUp-NavContainerInner">
+                <a href="#trucks/upcoming/" className="truck-ListOpen-FooterNavMenuPopUp-NavContainerInner">
                     <div className="truck-ListOpen-FooterNavMenuPopUp-NavText">
                         What&#8217;s coming up
                     </div>
@@ -134,7 +134,7 @@ var IndexComponent = React.createClass({
                     <div className="logo_WTT"></div>
 
                     <div className="truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter">
-                        <a href="list_TruckOpen.html" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
+                        <a href="#trucks/open/" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
                             <div className="button-WhatsComingUpText">
                                 What&#8217;s nearby
                             </div>
@@ -142,7 +142,7 @@ var IndexComponent = React.createClass({
                     </div>
 
                     <div className="truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter">
-                        <a href="list_TruckUpcoming.html" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
+                        <a href="#trucks/upcoming/" className="truck-ListOpen-FooterFilterPopUp-FilterContainerInner">
                             <div className="button-WhatsComingUpText">
                                 What&#8217;s coming up
                             </div>

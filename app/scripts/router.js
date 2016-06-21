@@ -5,6 +5,7 @@ var Parse = require('parse');
 
 var IndexComponent = require('./components/index.jsx').IndexComponent;
 var LoginComponent = require('./components/login.jsx').LoginComponent;
+var TruckListComponent = require('./components/truck.jsx').TruckListComponent;
 var AddChangeTruckComponent = require('./components/truck.jsx').AddChangeTruckComponent;
 
 
@@ -16,7 +17,8 @@ var Router = Backbone.Router.extend({
         'logout/': 'logout',
         'admin/trucks/add/': 'adminTruckForm',
         'admin/trucks/:id/': 'adminTruckForm',
-        'admin/trucks/': 'adminTruckList'
+        'admin/trucks/': 'adminTruckList',
+        'trucks/:status/': 'truckList'
     },
     initialize: function(){
         // Configure the node mount point
@@ -47,6 +49,12 @@ var Router = Backbone.Router.extend({
         ReactDOM.unmountComponentAtNode(this.appContainer);
         ReactDOM.render(React.createElement(IndexComponent, {app: self}), this.appContainer);
         //this.appContainer.innerHTML = "<div class='well'>Intentionally Left Blank</div>";
+    },
+    truckList: function(status){
+        var self = this;
+        ReactDOM.unmountComponentAtNode(this.appContainer);
+        console.log('truck list');
+        ReactDOM.render(React.createElement(TruckListComponent, {app: self, status: status}), this.appContainer);
     },
     login: function(){
         this.checkUser();
