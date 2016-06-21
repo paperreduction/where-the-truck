@@ -5,6 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5768,4 +5771,1572 @@ button.close {
 
 img {
   max-width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; }
+
+body {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background-color: #33393e; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+::-webkit-input-placeholder {
+  color: #adadad; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #adadad; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #adadad; }
+
+:-ms-input-placeholder {
+  color: #adadad; }
+
+/*/////////////////////////////////////////////////////*/
+/* MAIN BODY WRAPPER - KEEPS IT TO A MAX AND MIN WIDTH */
+.body-mobilewrapper {
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-justify-content: flex-start;
+  -moz-box-justify-content: flex-start;
+  -ms-flex-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+  height: auto;
+  margin: 0 auto; }
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+* {
+  min-height: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-weight: normal;
+  font-size: 2em;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0; }
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0; }
+
+h3 {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0; }
+
+h4 {
+  font-weight: normal;
+  font-size: .75em;
+  margin: 0;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  display: block; }
+
+/* CSS Document */
+/* FOOTER FOR OPEN TRUCK LIST */
+body {
+  display: none; }
+
+a.button-RoundBackContainer {
+  width: 40px;
+  height: 40px;
+  background-color: #008DAE;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 64px;
+  right: 12px;
+  z-index: 70;
+  box-shadow: 0px 3px 4px #101216;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align-items: flex-end;
+  -moz-box-align-items: flex-end;
+  -ms-flex-align-items: flex-end;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+a.button-RoundBackContainer:active {
+  box-shadow: 0px 8px 8px #101216; }
+
+a.button-RoundBackContainer:focus {
+  outline-style: none; }
+
+.button-RoundBackContainerText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: #B6D3D8;
+  line-height: 160%;
+  position: relative;
+  -webkit-transform: scale(1, 1.25);
+  transform: scale(1, 1.25);
+  position: relative;
+  right: 1px; }
+
+.truck-ListOpen-FooterContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background-color: #333131;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border-top: 6px solid #333131;
+  border-bottom: 6px solid #333131;
+  max-width: 600px;
+  margin: auto;
+  min-width: 320px; }
+
+.truck-ListOpen-FooterSearchInput {
+  padding: 4px 16px 6px 8px;
+  width: 100%;
+  float: left; }
+
+.truck-ListOpen-FooterSearchContainer {
+  width: 40%;
+  min-width: 184px;
+  max-width: 250px;
+  margin: 0 0 0 8px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  float: left;
+  z-index: 101;
+  -webkit-box-align-self: center;
+  -moz-box-align-self: center;
+  -ms-flex-align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-justify-content: flex-start;
+  -moz-box-justify-content: flex-start;
+  -ms-flex-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all .1s ease-in-out;
+  /* Safari */
+  transition: all .1s ease-in-out; }
+
+.truck-ListOpen-FooterSearchContainer input[type=text] {
+  height: 100%;
+  background-color: transparent;
+  border-right: 2px solid #33393e; }
+
+button.truck-ListOpen-FooterNavMenuContainer, button.truck-ListOpen-FooterFilterContainer {
+  width: 25%;
+  min-width: 58px;
+  float: left;
+  z-index: 102;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 95%;
+  background-color: #008DAE;
+  padding: 4px;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 6px 0 0;
+  box-shadow: 0px 3px 4px #101216;
+  -webkit-transition: all .1s;
+  /* Safari */
+  transition: all .1s; }
+
+button.truck-ListOpen-FooterNavMenuContainer {
+  width: 20%; }
+
+button.truck-ListOpen-FooterNavMenuContainer:active, button.truck-ListOpen-FooterFilterContainer:active {
+  box-shadow: 0px 8px 8px #101216;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0.26, 0, 1.33);
+  transition-timing-function: cubic-bezier(0.42, 0.26, 0, 1.33); }
+
+.truck-ListOpen-FooterNavMenuText, .truck-ListOpen-FooterFilterText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #B6D3D8;
+  /*line-height: 100%;*/
+  letter-spacing: 1px;
+  -webkit-transform: scale(1, 1.25);
+  transform: scale(1, 1.25); }
+
+.truck-ListOpen-FooterNavMenuPopUpContainer, .truck-ListOpen-FooterFilterPopUpContainer {
+  position: fixed;
+  top: -10px;
+  padding: 0;
+  height: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333131;
+  z-index: 99;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s cubic-bezier(0.43, 0.18, 0.34, 1.37);
+  /* Safari */
+  transition: all 0.5s cubic-bezier(0.43, 0.18, 0.34, 1.37); }
+
+.truck-ListOpen-FooterNavMenuPopUpContainer-Show, .truck-ListOpen-FooterFilterPopUpContainer-Show {
+  height: 100vh;
+  bottom: -10px;
+  top: -5px;
+  padding: 0 0 96px 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.43, 0.18, 0.34, 1.37);
+  /* Safari */
+  transition: all 0.5s cubic-bezier(0.43, 0.18, 0.34, 1.37); }
+
+/*////////////////// TWEAKS ////////////////////////*/
+.truck-ListOpen-FooterNavMenuPopUp-NavContainer-Show, .truck-ListOpen-FooterFilterPopUp-FilterContainer-Show {
+  opacity: 1; }
+
+.opacity-Zero-NotClickable {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  -webkit-transition: all .35s ease-in-out;
+  /* Safari */
+  transition: all .35s ease-in-out; }
+
+.overflow-Hidden {
+  overflow: hidden; }
+
+/*@media (min-width: 601px) {
+	a.button-RoundBackContainer {
+		right: 20vw;
+	}
+}*/
+@media (max-width: 350px) {
+  .truck-ListOpen-FooterFilterPopUp-FilterText {
+    font-size: .85rem; }
+
+  .truck-ListOpen-FooterNavMenuPopUp-NavText {
+    font-size: .85rem; }
+
+  .truck-ListOpen-FooterFilterText {
+    font-size: .85rem; }
+
+  .truck-ListOpen-FooterNavMenuText {
+    font-size: .85rem; } }
+body {
+  display: block; }
+
+body {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+::-webkit-input-placeholder {
+  color: #adadad; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #adadad; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #adadad; }
+
+:-ms-input-placeholder {
+  color: #adadad; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+input[type=text] {
+  color: #bcbcbc; }
+
+input[type=button], input[type=button]:hover {
+  position: relative;
+  left: -6px;
+  border: 1px solid #adc5cf;
+  background: #e4f1f9;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4f1f9), color-stop(100%, #d5e7f3));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 );
+  /* IE6-9 */
+  color: #7da2aa;
+  cursor: pointer; }
+
+form.truck-ListOpen-FooterSearch {
+  width: 100%; }
+
+input, select, textarea {
+  font-family: 'Oswald', sans-serif;
+  font-size: .85rem;
+  color: #B6D3D8;
+  letter-spacing: 1px;
+  -webkit-transform: scale(1, 1.25);
+          transform: scale(1, 1.25); }
+
+body {
+  display: block; }
+
+/* CSS Document */
+/* Nav Buttons */
+body {
+  display: none; }
+
+.nav-WittySayingContainer, .number-TrucksListedContainer {
+  width: 100%;
+  height: auto;
+  padding: 32px 0 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* background-color: #008DAE; */
+  /* box-shadow: 0px 3px 4px #101216; */
+  max-width: 600px;
+  margin: 0 auto 8px auto;
+  min-width: 320px;
+  text-align: center; }
+
+.nav-WittySayingContainer {
+  padding: 64px 0 16px 0; }
+
+.truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+  font-family: 'Lobster', italic;
+  font-size: 3rem;
+  color: #B6D3D8;
+  line-height: 100%;
+  letter-spacing: 1px; }
+
+.button-NavContainerOuter, .button-WhatsComingUpOuter, .truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter, .truck-ListOpen-FooterFilterPopUp-FilterContainerOuter {
+  width: 75%;
+  max-width: 325px;
+  min-width: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 8px auto;
+  position: relative;
+  z-index: 50;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  border: 2px solid #D15127;
+  padding: 4px;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align-self: center;
+  -moz-box-align-self: center;
+  -ms-flex-align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  /*box-shadow: 0px 3px 4px #101216;*/ }
+
+.truck-ListOpen-FooterNavMenuPopUp-NavContainerOuter {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s; }
+
+/*.button-NavContainerOuter {
+	width: 95%;
+	margin: 16px auto 8px;
+}*/
+.button-WhatsComingUpOuter-standalone {
+  margin: 8px auto 150px auto; }
+
+.button-NavContainerInner, a.button-WhatsComingUpInner, .button-WhatsComingUpInner, a.truck-ListOpen-FooterNavMenuPopUp-NavContainerInner, .truck-ListOpen-FooterNavMenuPopUp-NavContainerInner, a.truck-ListOpen-FooterFilterPopUp-FilterContainerInner, .truck-ListOpen-FooterFilterPopUp-FilterContainerInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #33393e;
+  /* min-height: 100%; */
+  border: 3px solid #008DAE;
+  /* overflow: hidden; */
+  /* padding: 2px; */
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-decoration: none;
+  box-shadow: 0px 3px 4px #101216;
+  text-align: center;
+  /*    -ms-transition-duration: .75s;
+      -o-transition-duration: .75s;
+      -moz-transition-duration: .75s;
+      -webkit-transition-duration: .75s;
+      transition-duration: .75s;*/ }
+
+.button-NavContainerInner:active, a.truck-ListOpen-FooterFilterPopUp-FilterContainerInner:active, a.truck-ListOpen-FooterNavMenuPopUp-NavContainerInner:active, a.button-WhatsComingUpInner:active {
+  border: 3px solid #008DAE;
+  background-color: #008DAE;
+  box-shadow: 0px 8px 8px #101216;
+  /*    -ms-transition-duration: .1s;
+      -o-transition-duration: .1s;
+      -moz-transition-duration: .1s;
+      -webkit-transition-duration: .1s;
+      transition-duration: .1s;*/
+  /*transition-timing-function: cubic-bezier(0.42, 0.26, 0, 1.33);*/ }
+
+/*.truck-ListOpen-FooterFilterPopUp-FilterContainer:after {
+	border: 2px solid red;
+}*/
+.button-NavText, .button-WhatsComingUpText, .truck-ListOpen-FooterNavMenuPopUp-NavText, .truck-ListOpen-FooterFilterPopUp-FilterText {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: #B6D3D8;
+  /*line-height: 100%;*/
+  letter-spacing: 1px;
+  -webkit-transform: scale(1, 1.25);
+  transform: scale(1, 1.25);
+  margin: 8px;
+  /*height: auto;*/ }
+
+/*////////////////// MEDIA QUERY ////////////////////////*/
+@media (max-width: 550px) {
+  .number-TrucksListedText {
+    font-size: 2.5rem; }
+
+  .truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 3rem;
+    color: #B6D3D8; } }
+@media (max-width: 400px) {
+  .truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 2rem; } }
+@media (max-width: 350px) {
+  /*.truck-ListOpen-FooterFilterPopUp-FilterText {
+  	font-size: .85rem;
+  }*/
+  .truck-ListEntryOpen-NotFoundText, .number-TrucksListedText {
+    font-size: 1.75rem; } }
+body {
+  display: block; }
+
+/* CSS Document */
+/* FOOTER FOR OPEN TRUCK LIST */
+body {
+  height: 100vh;
+  display: none; }
+
+.container-LandingPageBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+  height: auto;
+  min-height: 98vh;
+  padding: 0 0 100px 0;
+  margin: 0 auto; }
+
+.logo_WTT {
+  height: 150px;
+  width: 95%;
+  background-image: url("../images/WTT-Logo-dusk.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  margin: 0 auto 16px;
+  -webkit-filter: drop-shadow(0px 3px 4px #101216);
+  -moz-filter: drop-shadow(0px 3px 4px #101216);
+  -o-filter: drop-shadow(0px 3px 4px #101216);
+  -ms-filter: drop-shadow(0px 3px 4px #101216);
+  filter: drop-shadow(0px 3px 4px #101216); }
+
+/* FOOTER HACKS */
+.truck-ListOpen-FooterSearchContainer {
+  background-color: transparent; }
+
+button.truck-ListOpen-FooterFilterContainer {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px #101216; }
+
+.truck-ListOpen-FooterSearchContainer input {
+  height: 100%;
+  background-color: transparent;
+  border-right: 0px solid transparent; }
+
+body {
+  display: block; }
+
+/* CSS Document */
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CORE SETTINGS */
+body {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+::-webkit-input-placeholder {
+  color: #adadad; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #adadad; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #adadad; }
+
+:-ms-input-placeholder {
+  color: #adadad; }
+
+/*/////////////////////////////////////////////////////*/
+/* FONTS-WORDING */
+.truck-ListEntry-NameText, .truck-ListEntry-ButtonDirectionsText, .truck-ListEntry-ButtonProfileText, .truck-ListEntry-ButtonsMenuText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #B6D3D8;
+  line-height: 100%;
+  letter-spacing: 1px;
+  -webkit-transform: scale(1, 1.25);
+  transform: scale(1, 1.25); }
+
+.truck-ListEntry-NameText {
+  font-size: 2rem;
+  width: 100%;
+  -webkit-align-self: flex-start;
+  -ms-align-self: flex-start;
+  -o-align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.truck-ListEntryOpen-NotFoundText {
+  text-align: center;
+  margin: 0 0 16px 0; }
+
+.truck-ListEntry-ButtonDirectionsText {
+  font-size: 1.25rem; }
+
+.truck-ListEntry-DescriptionText, .truck-ListEntry-InfoTimeAMPMText, .truck-ListEntry-InfoTimeTilText, .truck-ListEntry-InfoTimeText, .truck-ListEntry-InfoMilesUnitText, .truck-ListEntry-InfoMilesDistanceText {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #adadad;
+  line-height: 60%;
+  letter-spacing: 1px;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  vertical-align: middle; }
+
+.truck-ListEntry-DescriptionText {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 175%;
+  width: 100%;
+  color: #B6D3D8;
+  -webkit-align-self: flex-start;
+  -ms-align-self: flex-start;
+  -o-align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.truck-ListEntry-InfoMilesUnitText {
+  font-size: .85rem;
+  margin-left: 3px; }
+
+.truck-ListEntry-InfoTimeText {
+  line-height: 40%; }
+
+.truck-ListEntry-InfoTimeTilText {
+  font-size: .85rem;
+  margin-right: 2px; }
+
+.truck-ListEntry-InfoTimeAMPMText {
+  font-size: .65rem;
+  margin-left: 1px; }
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CONTAINERS */
+.truck-ListEntryUpcoming, .truck-ListEntry {
+  width: 100%;
+  height: 200px;
+  border: 8px solid #D15127;
+  background-color: transparent;
+  margin-bottom: 8px;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  box-shadow: 0px 3px 4px #101216; }
+
+.truck-ListEntryUpcoming {
+  border: 8px solid #596069; }
+
+.truck-ListEntry:after {
+  clear: both; }
+
+.truck-ListEntryUpcoming-UpperHalf, .truck-ListEntry-UpperHalf {
+  height: 50%;
+  width: 100%;
+  -webkit-box-align-self: flex-start;
+  -moz-box-align-self: flex-start;
+  -ms-flex-align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom: 4px solid #D15127;
+  padding: 7px; }
+
+.truck-ListEntryUpcoming-UpperHalf {
+  border-bottom: 4px solid #596069; }
+
+.truck-ListEntry-LowerHalf {
+  width: 100%;
+  height: 50%;
+  position: relative; }
+
+.truck-ListEntry-ButtonsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  width: 58%;
+  float: left;
+  padding: 7px;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.truck-ListEntryUpcoming-InfoContainer, .truck-ListEntry-InfoContainer {
+  height: 100%;
+  width: 42%;
+  float: right;
+  border-left: 4px solid #D15127;
+  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.truck-ListEntryUpcoming-InfoContainer {
+  border-left: 4px solid #596069; }
+
+.truck-ListEntryUpcoming-InfoMilesContainer, .truck-ListEntry-InfoMilesContainer {
+  height: 49%;
+  width: 100%;
+  float: left;
+  border: 2px solid #D15127;
+  margin: 0 6px 7px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.truck-ListEntryUpcoming-InfoMilesContainer {
+  border: 2px solid #596069; }
+
+.truck-ListEntryUpcoming-InfoTimeContainer, .truck-ListEntry-InfoTimeContainer {
+  height: 49%;
+  width: 100%;
+  float: right;
+  border: 2px solid #D15127;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align-self: center;
+  -moz-box-align-self: center;
+  -ms-flex-align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 11px;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-align: center; }
+
+.truck-ListEntryUpcoming-InfoTimeContainer {
+  border: 2px solid #596069; }
+
+.truck-ListEntryOpen-NotFoundContainer {
+  width: 100%;
+  height: auto;
+  padding: 0 4vw;
+  margin: 32px 0 16px 0;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 0px #101216; }
+
+.truck-ListEntryUpcoming:last-of-type {
+  margin-bottom: 120px; }
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES CLICKABLES AND STATES */
+a.truck-ListEntry-NameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #008DAE;
+  overflow: hidden;
+  padding: 7px 0 0 7px;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-decoration: none;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  box-shadow: 0px 3px 4px #101216; }
+
+a.truck-ListEntry-NameContainer:active {
+  border: 3px solid #008DAE;
+  background-color: #008DAE;
+  box-shadow: 0px 8px 8px #101216; }
+
+a.truck-ListEntry-ButtonsProfileContainer, a.truck-ListEntry-ButtonsMenuContainer {
+  height: 45%;
+  width: 49%;
+  float: left;
+  margin: 0 6px 0 0;
+  border: 3px solid #008DAE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align-self: center;
+  -moz-box-align-self: center;
+  -ms-flex-align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 3px 4px #101216; }
+
+a.truck-ListEntry-ButtonsMenuContainer:active {
+  border: 3px solid #008DAE;
+  background-color: #008DAE;
+  box-shadow: 0px 8px 8px #101216; }
+
+a.truck-ListEntry-ButtonsProfileContainer {
+  float: right;
+  border: 3px solid #008DAE;
+  margin: 0px; }
+
+a.truck-ListEntry-ButtonsProfileContainer:active {
+  border: 3px solid #008DAE;
+  background-color: #008DAE;
+  box-shadow: 0px 8px 8px #101216; }
+
+.truck-ListEntry-ButtonsProfile:after {
+  clear: both; }
+
+a.truck-ListEntry-ButtonsDirectionsContainer {
+  height: 48%;
+  width: 100%;
+  border: 3px solid #008DAE;
+  float: left;
+  margin: 7px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 3px 4px #101216; }
+
+a.truck-ListEntry-ButtonsDirectionsContainer:active {
+  border: 3px solid #008DAE;
+  background-color: #008DAE;
+  box-shadow: 0px 8px 8px #101216; }
+
+button.truck-ListOpen-FooterNavMenuContainer, button.truck-ListOpen-FooterFilterContainer {
+  width: 25%;
+  min-width: 58px;
+  float: left;
+  z-index: 102;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 95%;
+  background-color: #008DAE;
+  padding: 4px;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 6px 0 0;
+  box-shadow: 0px 3px 4px #101216;
+  -webkit-transition: all .1s;
+  transition: all .1s; }
+
+/*/////////////////////////////////////////////////////*/
+/* TRUCK ENTRIES TWEAKS */
+@media (max-width: 550px) {
+  a.truck-ListEntry-ButtonsMenuContainer {
+    width: 48%; }
+
+  a.truck-ListEntry-ButtonsProfileContainer {
+    width: 49%; }
+
+  a.truck-ListEntry-ButtonsDirectionsContainer {
+    width: 99%; }
+
+  .truck-ListEntry-InfoMilesDistanceText {
+    letter-spacing: 0px;
+    font-size: 1.75rem;
+    line-height: 70%; }
+
+  .truck-ListEntry-InfoTimeText {
+    letter-spacing: 0px; }
+
+  .truck-ListEntryOpen-NotFoundText {
+    font-size: 2.5rem; } }
+@media (max-width: 400px) {
+  .truck-ListEntry-NameText {
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    line-height: 130%; }
+
+  a.truck-ListEntry-NameContainer {
+    padding-bottom: 4px; }
+
+  .truck-ListEntry-DescriptionText {
+    font-size: .85rem;
+    margin: -3px 0 0 0; }
+
+  .truck-ListEntry-InfoMilesDistanceText {
+    font-size: 1.75rem;
+    line-height: 70%;
+    letter-spacing: 1px; }
+
+  .truck-ListEntryOpen-NotFoundText {
+    font-size: 2rem; } }
+@media (max-width: 375px) {
+  a.truck-ListEntry-ButtonsMenuContainer {
+    width: 48%; }
+
+  a.truck-ListEntry-ButtonsProfileContainer {
+    width: 48%; } }
+@media (max-width: 350px) {
+  .truck-ListEntryOpen-NotFoundText {
+    font-size: 1.75rem; } }
+body {
+  display: block; }
+
 /*# sourceMappingURL=app.css.map */
