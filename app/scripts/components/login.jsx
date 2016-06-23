@@ -85,9 +85,8 @@ var LoginComponent = React.createClass({
                         <div className="image-TruckPhotoText">Login</div>
 
                         <form target="_blank" novalidate>
-                            <input type="email" name="username" className="email form-control" placeholder="username" required="required" />
-
-                            <input type="email" name="email" className="password form-control" placeholder="password" required="required" />
+                            <input name="username" type="email" className="email form-control" placeholder="username" valueLink={this.linkState('username')}/>
+                            <input name="password" type="password" className="password form-control" placeholder="Password Please" valueLink={this.linkState('password')}/>
 
                             <div className="button-NavContainerOuter">
                                 <div className="button-NavContainerInner">
