@@ -1,9 +1,9 @@
 
-// Bootstrap Variables
-$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
-// Import Bootstrap
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+//// Bootstrap Variables
+//$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+//
+//// Import Bootstrap
+//@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 
 *,
@@ -24,3 +24,4 @@ img {
 @import 'landingPage';
 
 @import 'truck_EntryList';
+@import 'truckloginregister';

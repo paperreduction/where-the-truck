@@ -39,7 +39,7 @@ blockquote {
 .logo_WTT {
 	height: 200px;
 	width: 100%;
-	background-image: url("../img/WTT-Logo-dusk.svg");
+	background-image: url("../images/WTT-Logo-dusk.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom center;
@@ -102,29 +102,29 @@ textarea:focus, input:focus {
     color: #B6D3D8;
 }
 
-input[type=email] {    
+input.form-control {
 	width: 80%;
     margin: 16px auto 0;
-    background: transparent;
+    //background: transparent;
     border: 2px solid #008DAE;
     padding: 8px;
     background-color: #333131;
     font: 1rem 'Oswald','Brush Script MT',cursive;
-    box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0 0 0 transparent;
     letter-spacing: 1px;
 }
 
-input[type=submit] {    
+#mc_embed_signup input[type=submit] {
 	width: 100%;
 	background: transparent;
-	border: 2px solid #008DAE;
-	background-color: #333131;
+	//border: 2px solid #008DAE;
+	//background-color: #333131;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	width: 100%;
+	//width: 100%;
 	height: auto;
 	padding: 4px;
 	-webkit-box-flex-direction: column;
@@ -132,7 +132,7 @@ input[type=submit] {
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	box-shadow: 0px 3px 4px #101216;
+	//box-shadow: 0px 3px 4px #101216;
 	align-items: center;
 	font-family: 'Oswald',sans-serif;
 	color: #B6D3D8;
@@ -140,7 +140,7 @@ input[type=submit] {
 	letter-spacing: 1px;
 }
 
-input[type=submit]:active {
+#mc_embed_signup input[type=submit]:active {
     border: 2px solid #008DAE;
     background-color:  #008DAE;
     box-shadow: 0px 8px 8px #101216;
